@@ -1,0 +1,17 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ tracker.title }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ tracker.title }}</h1>
+<!--        <p>{{ tracker.date }} </p>-->
+        <p>{{ tracker.anons }} </p>
+        <p>{{ tracker.full_text }} </p>
+        <a href="{% url 'tracker-delete' tracker.id %}" class="btn btn-warning">Удалить</a>
+        <a href="{% url 'tracker-update' tracker.id %}" class="btn btn-success">Редактировать</a>
+
+
+
+    </div>
+{% endblock %}

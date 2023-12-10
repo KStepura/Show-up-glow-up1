@@ -1,0 +1,11 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Show Up & Glow Up</h1>
+        <p>Show Up & Glow Up - это сайт, который поможет тебе сделать свою жизнь лучше</p>
+        <a href="{% url 'about' %}" class="btn btn-success">Наша команда</a>
+    </div>
+{% endblock %}
