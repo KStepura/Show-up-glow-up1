@@ -3,9 +3,18 @@
 {% block title %}Главная страница{% endblock %}
 
 {% block content %}
+    <style>
+       h1 {
+        margin-bottom: 40px;
+       }
+    </style>
     <div class="features">
         <h1>Show Up & Glow Up</h1>
-        <p>Show Up & Glow Up - это сайт, который поможет тебе сделать свою жизнь лучше</p>
-        <a href="{% url 'about' %}" class="btn btn-success">Наша команда</a>
+        <h3>Сайт, который поможет тебе:</h3>
+        <p>~ Избавится от <i>вредных привычек</i> ~ </p>
+        <p>~ Создать <i>новые положительные тренды</i> ~ </p>
+        <p>~ Улучшить <i>отношения между головой и своим телом</i> ~ </p>
+        <p>~ Стать <i>лучшей версией себя</i> ~ </p>
+        <a href="{% url 'about' %}" class="btn btn-success">Немного о нас</a>
     </div>
 {% endblock %}
