@@ -1,13 +1,38 @@
 {% extends 'main/layout.html' %}
+{% load static %}
 
 {% block title %}Про нас{% endblock %}
 
 {% block content %}
+    <style>
+       h3 {
+        margin-bottom: -10px;
+       }
+    </style>
     <div class="features">
         <h1>Наша команда</h1>
-        <p>Степура Екатерина</p>
-        <p>Поляков Степан</p>
-        <p>Грицаенко Александра</p>
-        <a href="{% url 'home' %}" class="btn btn-success">На главную</a>
+        <p><i>Студенты 2 курса НИУ ВШЭ ФКН ПМИ</i></p>
+        <div class="row">
+            <div class="col-sm">
+                <h3>Степура Екатерина</h3>
+                <p><small><i>@stepurakatia</i></small></p>
+                <img src="{% static 'main/img/katya.JPG' %}" alt="Kate"
+                     style="width:325px; ">
+            </div>
+            <div class="col-sm">
+                <h3>Поляков Степан</h3>
+                <p><small><i>@shotofvdkh</i></small></p>
+                <img src="{% static 'main/img/stepa.JPG' %}" alt="Stepan"
+                     style="width:325px;" >
+            </div>
+            <div class="col-sm">
+                <h3>Грицаенко Александра</h3>
+                <p><small><i>@grits_aenko</i></small></p>
+                <img src="{% static 'main/img/sasha.PNG' %}" alt="Sasha"
+                     style="width:325px;">
+            </div>
+        </div>
+        <p></p>
+        <a href="{% url 'home' %}" class="btn btn-success">Вернутся на главную</a>
     </div>
 {% endblock %}
